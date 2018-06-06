@@ -1,0 +1,101 @@
+\title{SCARA 3D Printer:
+	\\Design, Simulation, Model, and Construction
+}
+\author{
+        Edward Varty
+}
+\date{\today}
+
+\documentclass[12pt]{report}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{mathrsfs}
+\usepackage{float}
+\usepackage{verbatim}
+
+\begin{document}
+\maketitle
+
+% \[......\] gives an unnumbered equation
+% \begin{equation} and \end{equation} gives numbered equation
+
+\chapter{Introduction}
+
+This report details the design, simulation, modelling/CAD work, construction, and testing of a SCARA 3D printer. I had a hard time finding resources on a number of bits and pieces in the process of making a robot arm. My goal is to gather all the information needed to make a simple, yet functional robot arm into one document so that someone else who wants to do something similar won't have to trawl through dozens of sources to find the same information. This document is part of a whole package of files which include CAD parts in several formats, drawings, BOM, code, gerber files, etc. Ideally, everything you would need to both design and manufacture this arm is provided.
+
+This project started because I wanted to build a robot arm, but wanted to start simply. A SCARA has pretty simple kinematics and can function as a 3D printer. The forces involved in 3D printing are very low, so the physical structure doesn't need to be very big or reinforced. Note that, despite the intended function and my generally positive opinion of the reprap project, this robot is not intended to be 3D printed. It's not that it can't be, it's just that 3D printing was not a design constraint, so anything that can be 3D printed about it is pure coincidence.
+
+A small aside about units: I live in the states and have a background in physics. This means that my design work is in metric and my machining tolerances are just converted from customary. This hopefully won't be too noticable, but I apologize in advance for specifying a 35mm bearing housing with tolerances for a 1.5 thou press fit.
+
+I mentioned earlier that I wanted to provide all the information covering the design and construction process, including simulation and control theory. However, I do not want to write a textbook. For topics that I believe have sufficient resources, I will provide links to resources and, to combat link rot, useful search terms. I will generally assume that the reader has a good command of calculus, differential equations, and matrix operations, so I will not provide explanation in those areas. I won't go into great detail on some things, but I will provide the equations and such relevant to my specific use. For example, I will not go into the theory of beam bending, but I will provide the equations, cross sections, and other factors that I used to size the robot links.
+
+\begin{comment}\section{Motivation}
+
+
+
+This short chapter gets at my personal motivations for this project. If you are interested in the technical aspects of the SCARA arm 3D printer build, feel free to skip this, as it's not relevant to the engineering. This part is long and rather rambly.
+
+\subsection{Robot arms are cool}
+This is my primary motivation for this project. Robot arms are awesome, and I want one for myself. But, I absolutely cannot afford to buy one, plus, that's not very fun. I chose a SCARA arm for several reasons. They do not require very strong motors because the weight of the arm is taken up by the joints, not the motors. The inverse kinematics can be solved in closed form. The dynamics are feedback linearizable. I would like to build a full 6 or 7 axis robot arm at some point, but I figured a SCARA arm would be a good first foray into this area.
+
+\subsection{My current 3D printer is lame}
+My current printer is one of the super cheap Prusa i3 clones that are on Amazon and similar sites. While it works, frankly, better than I expected, it's kind of boring. I print mostly functional things, so its limitations are not a problem for me, but I wanted something cooler.
+
+\subsection{Practice}
+I am currently studying for a degree in Mechanical Engineering. However, I am doing this as an online student. This presents several problems, the main one of which is that I do not have access to the physical parts of the offered program. I have a couple of machines in my apartment, but I'm still pretty new at them. I've had enough training to not injure myself, but producing high precision parts is something I have extremely limited experience in. This project offers a good excuse to make a variety of parts, some of which need to be made significantly more precisely than I have so far done. Note that this means that not all choices made in the design are strictly the optimal choice. The design of the joints in particular is overdone, but it gives me practice at machining press fits for an already manufactured part, so absoute tolerance is much more critical than if I hade made both parts myself. In that case, I would need only relative tolerance, which is much easier to do and I have done that in the past.
+
+I also need practice designing and CADing parts. Since I am making everything myself, I am forced to deal with how I am going to machine the part while I'm designing it. While this isn't a huge deal for most of the robot, it does present some challenges from time to time. Additionally, while I've had a usable CAD program for years (got an offline license in college), I've never been terribly good at it, as my very simple self-made 3D prints will attest.
+
+A number of parts in the design have non-essential features that present challenges to machine with my setup. These are there because they look nicer and because most of them will be hand filed or similar. My filing is pretty rough, and these parts will give me practice.
+
+\end{comment}
+
+
+\chapter{Design}
+\section{3D Printing Specific Requirements}
+I had a very hard time determining what XY positioning accuracy I needed for a 3D printer. The open source printers didn't seem to bother with this sort of detail and the commercial printers are obviously just using belt pitch, pulley size, and max microstepping values. These are obviously worthless because the steppers are not going to hold the exact positions. I seriously doubt that a makerbot's frame and drive system can position the nozzle to within 4 tenths, which is what they list as "positioning precision". Note that they don't claim anything about accuracy. I believe that the 4 tenths is minimum value you can command the nozzle to move in an ideal setup with no losses or imperfections. 
+
+I normally use a 0.8mm nozzle, and I would like to be able to use a standard 0.4mm nozzle. Given that I have very minimal requirements on detail for my 3D prints, I think that a positioning accuracy of 0.05mm should be sufficient for my purposes. My positioning accuracy will be about one tenth my nozzle size, and this should not be a detriment. And, frankly, this is probably more accurate than my laser cut acrylic framed, chinese import 3D printer. 
+
+Luckily, there is more information availabe on what kind of z positioning I need. Layer heights are a common topic of discussion. I normally use 0.3mm. To give me the ability to have a bit more flexibility in what layer heights I can use, I am also aiming for 0.05mm positioning accuracy in the z axis. Z axis accuracy is complicated by sag in the robot arm itself due to both the weight of the arm and the force of the filament through the extruder. The sag of the arm will need to be kept small so that the arm is flat across the whole range of motion. 0.3mm is only 12 thou, so, I would like to keep sag below 2 thou. This will guide the design of the arm links.
+
+To keep the weight on the end of the arm down, I will be using a bowden extruder. 
+
+\section{Choice of Kinematic Order}
+As far as I can tell, traditional commercial SCARA arms (RRPR configuration) have the two rotational axes mounted to a fixed based and a prismatic axis mounted to the end of the arm. (There is also usually another rotational axis before the end effector, but that is not needed for my purposes.) This is obviously very suitable for the kind of tasks that SCARAs are used for commercially, like assembly and pick and place. Being able to access an area without needing a clearing for the whole arm is pretty convienient. However, this does increase the weight of the arm and the moment of inertia. This can obviously be dealt with otherwise it would not be done, but it needs a stronger frame and more rigid joint control. In the interest of keeping the arm light and to allow small motors to control it easily, I am putting the prismatic axis at the base (PRR configuration). This means that the arm only has to support itself and the hot end. This allows me to use smaller arm segments and less rigid joint control. Being able to use less rigid joint control is important because only belts or preloaded planetary gearboxes are in my budget.
+
+
+
+
+\end{document}
+This is never printed
+
+
+%\begin{figure}[H]
+%	\includegraphics[scale=.5]{6-bPPPlot.png}
+%	\caption{Phase portrait}
+%\end{figure}
+
+
+
+\begin{figure}[H]
+  \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{1-Cont.png}}%
+  \caption{Continous Control Block Diagram}
+  \label{fig:key}
+\end{figure}
+
+%\begin{figure}[H]
+%  \centering
+%  \begin{minipage}[b]{0.4\textwidth}
+%    \includegraphics[width=\textwidth]{HW7_4Q1Outputs.png}
+%    \caption{Flower one.}
+%  \end{minipage}
+%  \hfill
+%  \begin{minipage}[b]{0.4\textwidth}
+%    \includegraphics[width=\textwidth]{HW7_4Q1Input.png}
+%    \caption{Flower two.}
+%  \end{minipage}
+%\end{figure}
