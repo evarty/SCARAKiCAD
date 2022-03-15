@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name SCARAMotorFeedbackController-rescue)(type Legacy)(uri ${KIPRJMOD}/SCARAMotorFeedbackController-rescue.lib)(options "")(descr ""))
+  (lib (name TedsComponents)(type Legacy)(uri /home/edward/Electronics/Kicad/TedsComponents/TedsComponents.lib)(options "")(descr ""))
+)

@@ -1,0 +1,16 @@
+M48
+;DRILL file {KiCad 5.0.2+dfsg1-1~bpo9+1} date Wed 05 Jun 2019 05:15:00 PM EDT
+;FORMAT={-:-/ absolute / metric / decimal}
+FMAT,2
+METRIC,TZ
+T1C3.200
+%
+G90
+G05
+T1
+X68.5Y17.
+X76.Y65.5
+X14.5Y87.5
+X5.Y17.5
+T0
+M30

@@ -1,0 +1,1567 @@
+EESchema Schematic File Version 4
+LIBS:SCARAMotorFeedbackController-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 5250 1050 0    60   Input ~ 0
+24V
+Text GLabel 5450 2000 2    60   Input ~ 0
+PhaseUOutput
+Text GLabel 1200 1750 0    60   Input ~ 0
+PhaseUUpper
+Text GLabel 3300 2800 0    60   Input ~ 0
+GND
+$Comp
+L TedsComponents:UCC27712 U2
+U 1 1 5C3D2161
+P 2750 1750
+F 0 "U2" H 2950 1350 60  0000 C CNN
+F 1 "UCC27712" H 2400 2100 60  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2900 1400 60  0001 C CNN
+F 3 "" H 2900 1400 60  0001 C CNN
+	1    2750 1750
+	1    0    0    -1  
+$EndComp
+Text GLabel 1200 1850 0    60   Input ~ 0
+PhaseULower
+Text GLabel 1750 550  0    60   Input ~ 0
+12V
+$Comp
+L power:GND #PWR010
+U 1 1 5C3D2996
+P 1850 1250
+F 0 "#PWR010" H 1850 1000 50  0001 C CNN
+F 1 "GND" H 1850 1100 50  0000 C CNN
+F 2 "" H 1850 1250 50  0000 C CNN
+F 3 "" H 1850 1250 50  0000 C CNN
+	1    1850 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L SCARAMotorFeedbackController-rescue:D D1
+U 1 1 5C3D2DCC
+P 3300 800
+F 0 "D1" H 3300 900 50  0000 C CNN
+F 1 "US5g-TP" H 3300 700 50  0000 C CNN
+F 2 "Diode_SMD:D_SMB_Handsoldering" H 3300 800 50  0001 C CNN
+F 3 "" H 3300 800 50  0000 C CNN
+	1    3300 800 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SCARAMotorFeedbackController-rescue:R R2
+U 1 1 5C3D2E74
+P 3050 650
+F 0 "R2" V 3130 650 50  0000 C CNN
+F 1 "2R2" V 3050 650 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 2980 650 50  0001 C CNN
+F 3 "" H 3050 650 50  0000 C CNN
+	1    3050 650 
+	0    1    1    0   
+$EndComp
+$Comp
+L SCARAMotorFeedbackController-rescue:C C22
+U 1 1 5C3D316B
+P 3450 1400
+AR Path="/5C3D316B" Ref="C22"  Part="1" 
+AR Path="/5C3C0EAB/5C3D316B" Ref="C22"  Part="1" 
+F 0 "C22" H 3475 1500 50  0000 L CNN
+F 1 "220n" H 3475 1300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3488 1250 50  0001 C CNN
+F 3 "" H 3450 1400 50  0000 C CNN
+	1    3450 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L SCARAMotorFeedbackController-rescue:R R7
+U 1 1 5C3D3839
+P 4300 1700
+F 0 "R7" V 4380 1700 50  0000 C CNN
+F 1 "3R3" V 4300 1700 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4230 1700 50  0001 C CNN
+F 3 "" H 4300 1700 50  0000 C CNN
+	1    4300 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L SCARAMotorFeedbackController-rescue:R R8
+U 1 1 5C3D3D6A
+P 4150 1900
+F 0 "R8" V 4230 1900 50  0000 C CNN
+F 1 "10K" V 4150 1900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4080 1900 50  0001 C CNN
+F 3 "" H 4150 1900 50  0000 C CNN
+	1    4150 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 5C3D442E
+P 2750 2800
+F 0 "#PWR011" H 2750 2550 50  0001 C CNN
+F 1 "GND" H 2750 2650 50  0000 C CNN
+F 2 "" H 2750 2800 50  0000 C CNN
+F 3 "" H 2750 2800 50  0000 C CNN
+	1    2750 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L SCARAMotorFeedbackController-rescue:R R4
+U 1 1 5C3D47C9
+P 3850 2400
+F 0 "R4" V 3930 2400 50  0000 C CNN
+F 1 "3R3" V 3850 2400 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3780 2400 50  0001 C CNN
+F 3 "" H 3850 2400 50  0000 C CNN
+	1    3850 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L SCARAMotorFeedbackController-rescue:R R5
+U 1 1 5C3D483C
+P 4050 2600
+F 0 "R5" V 4130 2600 50  0000 C CNN
+F 1 "10K" V 4050 2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3980 2600 50  0001 C CNN
+F 3 "" H 4050 2600 50  0000 C CNN
+	1    4050 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 1050 5250 1450
+Wire Wire Line
+	5250 1850 5250 2000
+Wire Wire Line
+	5250 2000 5250 2150
+Connection ~ 5250 2000
+Wire Wire Line
+	3300 2800 3400 2800
+Wire Wire Line
+	2750 850  2750 1250
+Wire Wire Line
+	3200 650  3300 650 
+Wire Wire Line
+	3300 950  3300 1200
+Wire Wire Line
+	3300 1200 3300 1600
+Wire Wire Line
+	3300 1600 3200 1600
+Wire Wire Line
+	3450 1550 3450 1800
+Wire Wire Line
+	3200 1800 3450 1800
+Wire Wire Line
+	3450 1800 3750 1800
+Wire Wire Line
+	3900 1800 3750 1800
+Wire Wire Line
+	3300 1200 3450 1200
+Wire Wire Line
+	3450 1200 3750 1200
+Connection ~ 3300 1200
+Wire Wire Line
+	3450 1250 3450 1200
+Wire Wire Line
+	4850 1700 4850 1900
+Wire Wire Line
+	4450 1700 4850 1700
+Connection ~ 4850 1700
+Wire Wire Line
+	4000 1900 3900 1900
+Wire Wire Line
+	3900 1900 3900 1800
+Connection ~ 3450 1800
+Wire Wire Line
+	2750 2300 2750 2700
+Wire Wire Line
+	2750 2700 2750 2800
+Wire Wire Line
+	3400 2700 3400 2800
+Wire Wire Line
+	2750 2700 3400 2700
+Wire Wire Line
+	4200 2700 3400 2700
+Connection ~ 2750 2700
+Wire Wire Line
+	3200 1950 3200 2150
+Wire Wire Line
+	3200 2150 3400 2150
+Wire Wire Line
+	3400 2150 3400 2400
+Wire Wire Line
+	3400 2400 3700 2400
+Wire Wire Line
+	4200 2400 4050 2400
+Wire Wire Line
+	4200 2600 4200 2700
+Connection ~ 4200 2700
+Wire Wire Line
+	4850 1900 4300 1900
+$Comp
+L SCARAMotorFeedbackController-rescue:C C23
+U 1 1 5CCFB07B
+P 3750 1400
+AR Path="/5CCFB07B" Ref="C23"  Part="1" 
+AR Path="/5C3C0EAB/5CCFB07B" Ref="C23"  Part="1" 
+F 0 "C23" H 3775 1500 50  0000 L CNN
+F 1 "220n" H 3775 1300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3788 1250 50  0001 C CNN
+F 3 "" H 3750 1400 50  0000 C CNN
+	1    3750 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 1200 3750 1250
+Connection ~ 3450 1200
+Wire Wire Line
+	3750 1800 3750 1550
+$Comp
+L SCARAMotorFeedbackController-rescue:R R1
+U 1 1 5CCFBA66
+P 2000 550
+F 0 "R1" V 2080 550 50  0000 C CNN
+F 1 "10R" V 2000 550 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 1930 550 50  0001 C CNN
+F 3 "" H 2000 550 50  0000 C CNN
+	1    2000 550 
+	0    1    1    0   
+$EndComp
+$Comp
+L SCARAMotorFeedbackController-rescue:Q_NMOS_GDS Q1
+U 1 1 5CCFC7D4
+P 5150 1650
+F 0 "Q1" H 5350 1700 50  0000 L CNN
+F 1 "TSM340N06" H 5350 1600 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 5350 1750 50  0001 C CNN
+F 3 "" H 5150 1650 50  0000 C CNN
+	1    5150 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L SCARAMotorFeedbackController-rescue:Q_NMOS_GDS Q2
+U 1 1 5CCFC9D7
+P 5150 2350
+F 0 "Q2" H 5350 2400 50  0000 L CNN
+F 1 "TSM340N06" H 5350 2300 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 5350 2450 50  0001 C CNN
+F 3 "" H 5150 2350 50  0000 C CNN
+	1    5150 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L SCARAMotorFeedbackController-rescue:C C19
+U 1 1 5CCFD0E3
+P 1950 1000
+AR Path="/5CCFD0E3" Ref="C19"  Part="1" 
+AR Path="/5C3C0EAB/5CCFD0E3" Ref="C19"  Part="1" 
+F 0 "C19" H 1975 1100 50  0000 L CNN
+F 1 "100n" H 1975 900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1988 850 50  0001 C CNN
+F 3 "" H 1950 1000 50  0000 C CNN
+	1    1950 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L SCARAMotorFeedbackController-rescue:Screw_Terminal_1x03 J1
+U 1 1 5CD09AB6
+P 8600 2900
+F 0 "J1" H 8600 3250 50  0000 C TNN
+F 1 "Screw_Terminal_1x03" V 8450 2900 50  0000 C TNN
+F 2 "TedsFootprints:3TermScrewTerminal" H 8600 2575 50  0001 C CNN
+F 3 "" H 8575 3000 50  0001 C CNN
+	1    8600 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5CD39925
+P 5250 2750
+F 0 "R9" H 5320 2796 50  0000 L CNN
+F 1 "R05" H 5320 2705 50  0000 L CNN
+F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 5180 2750 50  0001 C CNN
+F 3 "~" H 5250 2750 50  0001 C CNN
+	1    5250 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 2600 5250 2550
+Wire Wire Line
+	4350 2700 4200 2700
+Wire Wire Line
+	4350 2700 4350 2900
+Connection ~ 3400 2700
+$Comp
+L TedsComponents:INA2180 U3
+U 1 1 5CD428C2
+P 9100 1400
+F 0 "U3" H 8850 1750 50  0000 C CNN
+F 1 "INA2180" H 9300 950 50  0000 C CNN
+F 2 "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm" H 9100 1400 50  0001 C CNN
+F 3 "" H 9100 1400 50  0001 C CNN
+	1    9100 1400
+	1    0    0    -1  
+$EndComp
+Text GLabel 8850 700  0    50   Input ~ 0
+5V
+Wire Wire Line
+	8850 700  9100 700 
+Wire Wire Line
+	9100 700  9100 800 
+$Comp
+L power:GND #PWR014
+U 1 1 5CD45222
+P 9100 2150
+F 0 "#PWR014" H 9100 1900 50  0001 C CNN
+F 1 "GND" H 9100 2000 50  0000 C CNN
+F 2 "" H 9100 2150 50  0000 C CNN
+F 3 "" H 9100 2150 50  0000 C CNN
+	1    9100 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 2150 9100 2050
+Text GLabel 5500 2600 2    50   Input ~ 0
+IN+2U
+Text GLabel 5500 2900 2    50   Input ~ 0
+IN-2U
+$Comp
+L Device:C C28
+U 1 1 5CD60658
+P 7800 1350
+F 0 "C28" H 7915 1396 50  0000 L CNN
+F 1 "0u1" H 7915 1305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7838 1200 50  0001 C CNN
+F 3 "~" H 7800 1350 50  0001 C CNN
+	1    7800 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 1200 7800 800 
+Wire Wire Line
+	7800 800  9100 800 
+Connection ~ 9100 800 
+Wire Wire Line
+	9100 800  9100 900 
+Wire Wire Line
+	9100 2050 7800 2050
+Wire Wire Line
+	7800 2050 7800 1500
+Connection ~ 9100 2050
+Wire Wire Line
+	9100 2050 9100 2000
+Wire Wire Line
+	1950 1150 1850 1150
+$Comp
+L SCARAMotorFeedbackController-rescue:C C?
+U 1 1 5CD3A5BB
+P 2200 1000
+AR Path="/5CD3A5BB" Ref="C?"  Part="1" 
+AR Path="/5C3C0EAB/5CD3A5BB" Ref="C20"  Part="1" 
+F 0 "C20" H 2225 1100 50  0000 L CNN
+F 1 "1u" H 2225 900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2238 850 50  0001 C CNN
+F 3 "" H 2200 1000 50  0000 C CNN
+	1    2200 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1150 2450 1150
+$Comp
+L SCARAMotorFeedbackController-rescue:C C?
+U 1 1 5CD3A658
+P 2450 1000
+AR Path="/5CD3A658" Ref="C?"  Part="1" 
+AR Path="/5C3C0EAB/5CD3A658" Ref="C21"  Part="1" 
+F 0 "C21" H 2475 1100 50  0000 L CNN
+F 1 "4u7" H 2475 900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2488 850 50  0001 C CNN
+F 3 "" H 2450 1000 50  0000 C CNN
+	1    2450 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 850  2750 850 
+Wire Wire Line
+	1850 1250 1850 1150
+Connection ~ 2450 850 
+Wire Wire Line
+	2200 850  2450 850 
+Connection ~ 2200 850 
+Connection ~ 2200 1150
+Wire Wire Line
+	1950 850  2200 850 
+Connection ~ 1950 1150
+Wire Wire Line
+	1950 1150 2200 1150
+Connection ~ 3750 1800
+Wire Wire Line
+	4950 1650 4850 1650
+Wire Wire Line
+	4850 1650 4850 1700
+Wire Wire Line
+	4200 2250 4200 2400
+Wire Wire Line
+	3900 2600 3900 2500
+Wire Wire Line
+	3900 2500 4050 2500
+Wire Wire Line
+	4050 2500 4050 2400
+Connection ~ 4050 2400
+Wire Wire Line
+	4050 2400 4000 2400
+Wire Wire Line
+	4400 2250 4200 2250
+Wire Wire Line
+	4950 2350 4400 2350
+Wire Wire Line
+	4400 2350 4400 2250
+Connection ~ 5250 2600
+Connection ~ 5250 2900
+Wire Wire Line
+	5250 2900 4350 2900
+Wire Wire Line
+	5250 2600 5500 2600
+Wire Wire Line
+	5250 2900 5500 2900
+Wire Wire Line
+	5250 2000 5450 2000
+Text GLabel 8150 2700 0    60   Input ~ 0
+PhaseUOutput
+Wire Wire Line
+	8150 2700 8400 2700
+Text GLabel 8300 1550 0    50   Input ~ 0
+IN+2U
+Text GLabel 8300 1650 0    50   Input ~ 0
+IN-2U
+Wire Wire Line
+	8300 1550 8600 1550
+Wire Wire Line
+	8600 1650 8300 1650
+Text GLabel 9800 1350 2    50   Input ~ 0
+CurrentSenseU
+Wire Wire Line
+	9600 1350 9800 1350
+Text GLabel 8150 2900 0    60   Input ~ 0
+PhaseVOutput
+Text GLabel 8150 3100 0    60   Input ~ 0
+PhaseWOutput
+Wire Wire Line
+	8150 2900 8400 2900
+Wire Wire Line
+	8400 3100 8150 3100
+Text GLabel 5300 3650 0    60   Input ~ 0
+24V
+Text GLabel 5500 4600 2    60   Input ~ 0
+PhaseVOutput
+Text GLabel 1200 4350 0    60   Input ~ 0
+PhaseVUpper
+Text GLabel 3350 5400 0    60   Input ~ 0
+GND
+$Comp
+L TedsComponents:UCC27712 U5
+U 1 1 5CD5EC52
+P 2800 4350
+F 0 "U5" H 3000 3950 60  0000 C CNN
+F 1 "UCC27712" H 2450 4700 60  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2950 4000 60  0001 C CNN
+F 3 "" H 2950 4000 60  0001 C CNN
+	1    2800 4350
+	1    0    0    -1  
+$EndComp
+Text GLabel 1200 4450 0    60   Input ~ 0
+PhaseVLower
+Text GLabel 1900 3150 0    60   Input ~ 0
+12V
+$Comp
+L power:GND #PWR05
+U 1 1 5CD5EC5B
+P 1900 3850
+F 0 "#PWR05" H 1900 3600 50  0001 C CNN
+F 1 "GND" H 1900 3700 50  0000 C CNN
+F 2 "" H 1900 3850 50  0000 C CNN
+F 3 "" H 1900 3850 50  0000 C CNN
+	1    1900 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L SCARAMotorFeedbackController-rescue:D D5
+U 1 1 5CD5EC61
+P 3350 3400
+F 0 "D5" H 3350 3500 50  0000 C CNN
+F 1 "US5g-TP" H 3350 3300 50  0000 C CNN
+F 2 "Diode_SMD:D_SMB_Handsoldering" H 3350 3400 50  0001 C CNN
+F 3 "" H 3350 3400 50  0000 C CNN
+	1    3350 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SCARAMotorFeedbackController-rescue:R R13
+U 1 1 5CD5EC68
+P 3100 3250
+F 0 "R13" V 3180 3250 50  0000 C CNN
+F 1 "2R2" V 3100 3250 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3030 3250 50  0001 C CNN
+F 3 "" H 3100 3250 50  0000 C CNN
+	1    3100 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L SCARAMotorFeedbackController-rescue:C C?
+U 1 1 5CD5EC6F
+P 3500 4000
+AR Path="/5CD5EC6F" Ref="C?"  Part="1" 
+AR Path="/5C3C0EAB/5CD5EC6F" Ref="C15"  Part="1" 
+F 0 "C15" H 3525 4100 50  0000 L CNN
+F 1 "220n" H 3525 3900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3538 3850 50  0001 C CNN
+F 3 "" H 3500 4000 50  0000 C CNN
+	1    3500 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L SCARAMotorFeedbackController-rescue:R R25
+U 1 1 5CD5EC84
+P 4350 4300
+F 0 "R25" V 4430 4300 50  0000 C CNN
+F 1 "3R3" V 4350 4300 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4280 4300 50  0001 C CNN
+F 3 "" H 4350 4300 50  0000 C CNN
+	1    4350 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L SCARAMotorFeedbackController-rescue:R R23
+U 1 1 5CD5EC8B
+P 4200 4500
+F 0 "R23" V 4280 4500 50  0000 C CNN
+F 1 "10K" V 4200 4500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4130 4500 50  0001 C CNN
+F 3 "" H 4200 4500 50  0000 C CNN
+	1    4200 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5CD5EC92
+P 2800 5400
+F 0 "#PWR07" H 2800 5150 50  0001 C CNN
+F 1 "GND" H 2800 5250 50  0000 C CNN
+F 2 "" H 2800 5400 50  0000 C CNN
+F 3 "" H 2800 5400 50  0000 C CNN
+	1    2800 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L SCARAMotorFeedbackController-rescue:R R17
+U 1 1 5CD5ECA6
+P 3900 5000
+F 0 "R17" V 3980 5000 50  0000 C CNN
+F 1 "3R3" V 3900 5000 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3830 5000 50  0001 C CNN
+F 3 "" H 3900 5000 50  0000 C CNN
+	1    3900 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L SCARAMotorFeedbackController-rescue:R R20
+U 1 1 5CD5ECAD
+P 4100 5200
+F 0 "R20" V 4180 5200 50  0000 C CNN
+F 1 "10K" V 4100 5200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4030 5200 50  0001 C CNN
+F 3 "" H 4100 5200 50  0000 C CNN
+	1    4100 5200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 3650 5300 4050
+Wire Wire Line
+	5300 4450 5300 4600
+Wire Wire Line
+	5300 4600 5300 4750
+Connection ~ 5300 4600
+Wire Wire Line
+	3350 5400 3450 5400
+Wire Wire Line
+	2800 3450 2800 3850
+Wire Wire Line
+	3250 3250 3350 3250
+Wire Wire Line
+	3350 3550 3350 3800
+Wire Wire Line
+	3350 3800 3350 4200
+Wire Wire Line
+	3350 4200 3250 4200
+Wire Wire Line
+	3500 4150 3500 4400
+Wire Wire Line
+	3250 4400 3500 4400
+Wire Wire Line
+	3500 4400 3800 4400
+Wire Wire Line
+	3950 4400 3800 4400
+Wire Wire Line
+	3350 3800 3500 3800
+Wire Wire Line
+	3500 3800 3800 3800
+Connection ~ 3350 3800
+Wire Wire Line
+	3500 3850 3500 3800
+Wire Wire Line
+	4900 4300 4900 4500
+Wire Wire Line
+	4500 4300 4900 4300
+Connection ~ 4900 4300
+Wire Wire Line
+	4050 4500 3950 4500
+Wire Wire Line
+	3950 4500 3950 4400
+Connection ~ 3500 4400
+Wire Wire Line
+	2800 4900 2800 5300
+Wire Wire Line
+	2800 5300 2800 5400
+Wire Wire Line
+	3450 5300 3450 5400
+Wire Wire Line
+	2800 5300 3450 5300
+Wire Wire Line
+	4250 5300 3450 5300
+Connection ~ 2800 5300
+Wire Wire Line
+	3250 4550 3250 4750
+Wire Wire Line
+	3250 4750 3450 4750
+Wire Wire Line
+	3450 4750 3450 5000
+Wire Wire Line
+	3450 5000 3750 5000
+Wire Wire Line
+	4250 5000 4100 5000
+Wire Wire Line
+	4250 5200 4250 5300
+Connection ~ 4250 5300
+Wire Wire Line
+	4900 4500 4350 4500
+$Comp
+L SCARAMotorFeedbackController-rescue:C C?
+U 1 1 5CD5ECEB
+P 3800 4000
+AR Path="/5CD5ECEB" Ref="C?"  Part="1" 
+AR Path="/5C3C0EAB/5CD5ECEB" Ref="C17"  Part="1" 
+F 0 "C17" H 3825 4100 50  0000 L CNN
+F 1 "220n" H 3825 3900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3838 3850 50  0001 C CNN
+F 3 "" H 3800 4000 50  0000 C CNN
+	1    3800 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3800 3800 3850
+Connection ~ 3500 3800
+Wire Wire Line
+	3800 4400 3800 4150
+$Comp
+L SCARAMotorFeedbackController-rescue:R R11
+U 1 1 5CD5ECF5
+P 2150 3150
+F 0 "R11" V 2230 3150 50  0000 C CNN
+F 1 "10R" V 2150 3150 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 2080 3150 50  0001 C CNN
+F 3 "" H 2150 3150 50  0000 C CNN
+	1    2150 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L SCARAMotorFeedbackController-rescue:Q_NMOS_GDS Q5
+U 1 1 5CD5ECFC
+P 5200 4250
+F 0 "Q5" H 5400 4300 50  0000 L CNN
+F 1 "TSM340N06" H 5400 4200 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 5400 4350 50  0001 C CNN
+F 3 "" H 5200 4250 50  0000 C CNN
+	1    5200 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L SCARAMotorFeedbackController-rescue:Q_NMOS_GDS Q6
+U 1 1 5CD5ED03
+P 5200 4950
+F 0 "Q6" H 5400 5000 50  0000 L CNN
+F 1 "TSM340N06" H 5400 4900 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 5400 5050 50  0001 C CNN
+F 3 "" H 5200 4950 50  0000 C CNN
+	1    5200 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L SCARAMotorFeedbackController-rescue:C C?
+U 1 1 5CD5ED0A
+P 2000 3600
+AR Path="/5CD5ED0A" Ref="C?"  Part="1" 
+AR Path="/5C3C0EAB/5CD5ED0A" Ref="C9"  Part="1" 
+F 0 "C9" H 2025 3700 50  0000 L CNN
+F 1 "100n" H 2025 3500 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2038 3450 50  0001 C CNN
+F 3 "" H 2000 3600 50  0000 C CNN
+	1    2000 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R27
+U 1 1 5CD5ED11
+P 5300 5350
+F 0 "R27" H 5370 5396 50  0000 L CNN
+F 1 "R05" H 5370 5305 50  0000 L CNN
+F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 5230 5350 50  0001 C CNN
+F 3 "~" H 5300 5350 50  0001 C CNN
+	1    5300 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 5200 5300 5150
+Wire Wire Line
+	4400 5300 4250 5300
+Wire Wire Line
+	4400 5300 4400 5500
+Connection ~ 3450 5300
+Text GLabel 5550 5200 2    50   Input ~ 0
+IN+2V
+Text GLabel 5550 5500 2    50   Input ~ 0
+IN-2V
+Wire Wire Line
+	2000 3750 1900 3750
+$Comp
+L SCARAMotorFeedbackController-rescue:C C?
+U 1 1 5CD5ED21
+P 2250 3600
+AR Path="/5CD5ED21" Ref="C?"  Part="1" 
+AR Path="/5C3C0EAB/5CD5ED21" Ref="C11"  Part="1" 
+F 0 "C11" H 2275 3700 50  0000 L CNN
+F 1 "1u" H 2275 3500 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2288 3450 50  0001 C CNN
+F 3 "" H 2250 3600 50  0000 C CNN
+	1    2250 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 3750 2500 3750
+$Comp
+L SCARAMotorFeedbackController-rescue:C C?
+U 1 1 5CD5ED29
+P 2500 3600
+AR Path="/5CD5ED29" Ref="C?"  Part="1" 
+AR Path="/5C3C0EAB/5CD5ED29" Ref="C13"  Part="1" 
+F 0 "C13" H 2525 3700 50  0000 L CNN
+F 1 "4u7" H 2525 3500 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2538 3450 50  0001 C CNN
+F 3 "" H 2500 3600 50  0000 C CNN
+	1    2500 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 3450 2800 3450
+Wire Wire Line
+	1900 3850 1900 3750
+Wire Wire Line
+	1900 3150 2000 3150
+Connection ~ 2500 3450
+Wire Wire Line
+	2250 3450 2500 3450
+Connection ~ 2250 3450
+Connection ~ 2250 3750
+Wire Wire Line
+	2000 3450 2250 3450
+Connection ~ 2000 3750
+Wire Wire Line
+	2000 3750 2250 3750
+Connection ~ 3800 4400
+Wire Wire Line
+	5000 4250 4900 4250
+Wire Wire Line
+	4900 4250 4900 4300
+Wire Wire Line
+	4250 4850 4250 5000
+Wire Wire Line
+	3950 5200 3950 5100
+Wire Wire Line
+	3950 5100 4100 5100
+Wire Wire Line
+	4100 5100 4100 5000
+Connection ~ 4100 5000
+Wire Wire Line
+	4100 5000 4050 5000
+Wire Wire Line
+	4450 4850 4250 4850
+Wire Wire Line
+	5000 4950 4450 4950
+Wire Wire Line
+	4450 4950 4450 4850
+Connection ~ 5300 5200
+Connection ~ 5300 5500
+Wire Wire Line
+	5300 5500 4400 5500
+Wire Wire Line
+	5300 5200 5550 5200
+Wire Wire Line
+	5300 5500 5550 5500
+Wire Wire Line
+	5300 4600 5500 4600
+Text GLabel 5100 6100 0    60   Input ~ 0
+24V
+Text GLabel 5300 7050 2    60   Input ~ 0
+PhaseWOutput
+Text GLabel 1250 6800 0    60   Input ~ 0
+PhaseWUpper
+Text GLabel 3150 7850 0    60   Input ~ 0
+GND
+$Comp
+L TedsComponents:UCC27712 U4
+U 1 1 5CD6823D
+P 2600 6800
+F 0 "U4" H 2800 6400 60  0000 C CNN
+F 1 "UCC27712" H 2250 7150 60  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2750 6450 60  0001 C CNN
+F 3 "" H 2750 6450 60  0001 C CNN
+	1    2600 6800
+	1    0    0    -1  
+$EndComp
+Text GLabel 1250 6900 0    60   Input ~ 0
+PhaseWLower
+Text GLabel 1500 5600 0    60   Input ~ 0
+12V
+$Comp
+L power:GND #PWR04
+U 1 1 5CD68246
+P 1700 6300
+F 0 "#PWR04" H 1700 6050 50  0001 C CNN
+F 1 "GND" H 1700 6150 50  0000 C CNN
+F 2 "" H 1700 6300 50  0000 C CNN
+F 3 "" H 1700 6300 50  0000 C CNN
+	1    1700 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L SCARAMotorFeedbackController-rescue:D D4
+U 1 1 5CD6824C
+P 3150 5850
+F 0 "D4" H 3150 5950 50  0000 C CNN
+F 1 "US5g-TP" H 3150 5750 50  0000 C CNN
+F 2 "Diode_SMD:D_SMB_Handsoldering" H 3150 5850 50  0001 C CNN
+F 3 "" H 3150 5850 50  0000 C CNN
+	1    3150 5850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SCARAMotorFeedbackController-rescue:R R12
+U 1 1 5CD68253
+P 2900 5700
+F 0 "R12" V 2980 5700 50  0000 C CNN
+F 1 "2R2" V 2900 5700 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 2830 5700 50  0001 C CNN
+F 3 "" H 2900 5700 50  0000 C CNN
+	1    2900 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L SCARAMotorFeedbackController-rescue:C C?
+U 1 1 5CD6825A
+P 3300 6450
+AR Path="/5CD6825A" Ref="C?"  Part="1" 
+AR Path="/5C3C0EAB/5CD6825A" Ref="C14"  Part="1" 
+F 0 "C14" H 3325 6550 50  0000 L CNN
+F 1 "220n" H 3325 6350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3338 6300 50  0001 C CNN
+F 3 "" H 3300 6450 50  0000 C CNN
+	1    3300 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L SCARAMotorFeedbackController-rescue:R R22
+U 1 1 5CD6826F
+P 4150 6750
+F 0 "R22" V 4230 6750 50  0000 C CNN
+F 1 "3R3" V 4150 6750 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 6750 50  0001 C CNN
+F 3 "" H 4150 6750 50  0000 C CNN
+	1    4150 6750
+	0    1    1    0   
+$EndComp
+$Comp
+L SCARAMotorFeedbackController-rescue:R R19
+U 1 1 5CD68276
+P 4000 6950
+F 0 "R19" V 4080 6950 50  0000 C CNN
+F 1 "10K" V 4000 6950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3930 6950 50  0001 C CNN
+F 3 "" H 4000 6950 50  0000 C CNN
+	1    4000 6950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5CD6827D
+P 2600 7850
+F 0 "#PWR06" H 2600 7600 50  0001 C CNN
+F 1 "GND" H 2600 7700 50  0000 C CNN
+F 2 "" H 2600 7850 50  0000 C CNN
+F 3 "" H 2600 7850 50  0000 C CNN
+	1    2600 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L SCARAMotorFeedbackController-rescue:R R15
+U 1 1 5CD68291
+P 3700 7450
+F 0 "R15" V 3780 7450 50  0000 C CNN
+F 1 "3R3" V 3700 7450 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3630 7450 50  0001 C CNN
+F 3 "" H 3700 7450 50  0000 C CNN
+	1    3700 7450
+	0    1    1    0   
+$EndComp
+$Comp
+L SCARAMotorFeedbackController-rescue:R R18
+U 1 1 5CD68298
+P 3900 7650
+F 0 "R18" V 3980 7650 50  0000 C CNN
+F 1 "10K" V 3900 7650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3830 7650 50  0001 C CNN
+F 3 "" H 3900 7650 50  0000 C CNN
+	1    3900 7650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 6100 5100 6500
+Wire Wire Line
+	5100 6900 5100 7050
+Wire Wire Line
+	5100 7050 5100 7200
+Connection ~ 5100 7050
+Wire Wire Line
+	3150 7850 3250 7850
+Wire Wire Line
+	2600 5900 2600 6300
+Wire Wire Line
+	3050 5700 3150 5700
+Wire Wire Line
+	3150 6000 3150 6250
+Wire Wire Line
+	3150 6250 3150 6650
+Wire Wire Line
+	3150 6650 3050 6650
+Wire Wire Line
+	3300 6600 3300 6850
+Wire Wire Line
+	3050 6850 3300 6850
+Wire Wire Line
+	3300 6850 3600 6850
+Wire Wire Line
+	3750 6850 3600 6850
+Wire Wire Line
+	3150 6250 3300 6250
+Wire Wire Line
+	3300 6250 3600 6250
+Connection ~ 3150 6250
+Wire Wire Line
+	3300 6300 3300 6250
+Wire Wire Line
+	4700 6750 4700 6950
+Wire Wire Line
+	4300 6750 4700 6750
+Connection ~ 4700 6750
+Wire Wire Line
+	3850 6950 3750 6950
+Wire Wire Line
+	3750 6950 3750 6850
+Connection ~ 3300 6850
+Wire Wire Line
+	2600 7350 2600 7750
+Wire Wire Line
+	2600 7750 2600 7850
+Wire Wire Line
+	3250 7750 3250 7850
+Wire Wire Line
+	2600 7750 3250 7750
+Wire Wire Line
+	4050 7750 3250 7750
+Connection ~ 2600 7750
+Wire Wire Line
+	3050 7000 3050 7200
+Wire Wire Line
+	3050 7200 3250 7200
+Wire Wire Line
+	3250 7200 3250 7450
+Wire Wire Line
+	3250 7450 3550 7450
+Wire Wire Line
+	4050 7450 3900 7450
+Wire Wire Line
+	4050 7650 4050 7750
+Connection ~ 4050 7750
+Wire Wire Line
+	4700 6950 4150 6950
+$Comp
+L SCARAMotorFeedbackController-rescue:C C?
+U 1 1 5CD682D6
+P 3600 6450
+AR Path="/5CD682D6" Ref="C?"  Part="1" 
+AR Path="/5C3C0EAB/5CD682D6" Ref="C16"  Part="1" 
+F 0 "C16" H 3625 6550 50  0000 L CNN
+F 1 "220n" H 3625 6350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3638 6300 50  0001 C CNN
+F 3 "" H 3600 6450 50  0000 C CNN
+	1    3600 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 6250 3600 6300
+Connection ~ 3300 6250
+Wire Wire Line
+	3600 6850 3600 6600
+$Comp
+L SCARAMotorFeedbackController-rescue:R R10
+U 1 1 5CD682E0
+P 1850 5600
+F 0 "R10" V 1930 5600 50  0000 C CNN
+F 1 "10R" V 1850 5600 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 1780 5600 50  0001 C CNN
+F 3 "" H 1850 5600 50  0000 C CNN
+	1    1850 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L SCARAMotorFeedbackController-rescue:Q_NMOS_GDS Q3
+U 1 1 5CD682E7
+P 5000 6700
+F 0 "Q3" H 5200 6750 50  0000 L CNN
+F 1 "TSM340N06" H 5200 6650 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 5200 6800 50  0001 C CNN
+F 3 "" H 5000 6700 50  0000 C CNN
+	1    5000 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L SCARAMotorFeedbackController-rescue:Q_NMOS_GDS Q4
+U 1 1 5CD682EE
+P 5000 7400
+F 0 "Q4" H 5200 7450 50  0000 L CNN
+F 1 "TSM340N06" H 5200 7350 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 5200 7500 50  0001 C CNN
+F 3 "" H 5000 7400 50  0000 C CNN
+	1    5000 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L SCARAMotorFeedbackController-rescue:C C?
+U 1 1 5CD682F5
+P 1800 6050
+AR Path="/5CD682F5" Ref="C?"  Part="1" 
+AR Path="/5C3C0EAB/5CD682F5" Ref="C7"  Part="1" 
+F 0 "C7" H 1825 6150 50  0000 L CNN
+F 1 "100n" H 1825 5950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1838 5900 50  0001 C CNN
+F 3 "" H 1800 6050 50  0000 C CNN
+	1    1800 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R26
+U 1 1 5CD682FC
+P 5550 7800
+F 0 "R26" H 5620 7846 50  0000 L CNN
+F 1 "R05" H 5620 7755 50  0000 L CNN
+F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 5480 7800 50  0001 C CNN
+F 3 "~" H 5550 7800 50  0001 C CNN
+	1    5550 7800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 7750 4050 7750
+Wire Wire Line
+	4200 7750 4200 7950
+Connection ~ 3250 7750
+Wire Wire Line
+	1800 6200 1700 6200
+$Comp
+L SCARAMotorFeedbackController-rescue:C C?
+U 1 1 5CD6830C
+P 2050 6050
+AR Path="/5CD6830C" Ref="C?"  Part="1" 
+AR Path="/5C3C0EAB/5CD6830C" Ref="C10"  Part="1" 
+F 0 "C10" H 2075 6150 50  0000 L CNN
+F 1 "1u" H 2075 5950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2088 5900 50  0001 C CNN
+F 3 "" H 2050 6050 50  0000 C CNN
+	1    2050 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 6200 2300 6200
+$Comp
+L SCARAMotorFeedbackController-rescue:C C?
+U 1 1 5CD68314
+P 2300 6050
+AR Path="/5CD68314" Ref="C?"  Part="1" 
+AR Path="/5C3C0EAB/5CD68314" Ref="C12"  Part="1" 
+F 0 "C12" H 2325 6150 50  0000 L CNN
+F 1 "4u7" H 2325 5950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2338 5900 50  0001 C CNN
+F 3 "" H 2300 6050 50  0000 C CNN
+	1    2300 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 5900 2600 5900
+Wire Wire Line
+	1700 6300 1700 6200
+Wire Wire Line
+	1500 5600 1700 5600
+Connection ~ 2300 5900
+Wire Wire Line
+	2050 5900 2300 5900
+Connection ~ 2050 5900
+Connection ~ 2050 6200
+Wire Wire Line
+	1800 5900 2050 5900
+Connection ~ 1800 6200
+Wire Wire Line
+	1800 6200 2050 6200
+Connection ~ 3600 6850
+Wire Wire Line
+	4800 6700 4700 6700
+Wire Wire Line
+	4700 6700 4700 6750
+Wire Wire Line
+	4050 7300 4050 7450
+Wire Wire Line
+	3750 7650 3750 7550
+Wire Wire Line
+	3750 7550 3900 7550
+Wire Wire Line
+	3900 7550 3900 7450
+Connection ~ 3900 7450
+Wire Wire Line
+	3900 7450 3850 7450
+Wire Wire Line
+	4250 7300 4050 7300
+Wire Wire Line
+	4800 7400 4250 7400
+Wire Wire Line
+	4250 7400 4250 7300
+Wire Wire Line
+	5100 7950 4200 7950
+Wire Wire Line
+	5100 7050 5300 7050
+NoConn ~ 8600 1250
+NoConn ~ 8600 1350
+NoConn ~ 9600 1250
+$Comp
+L TedsComponents:INA2180 U6
+U 1 1 5CDE576F
+P 8900 4800
+F 0 "U6" H 8650 5150 50  0000 C CNN
+F 1 "INA2180" H 9100 4350 50  0000 C CNN
+F 2 "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm" H 8900 4800 50  0001 C CNN
+F 3 "" H 8900 4800 50  0001 C CNN
+	1    8900 4800
+	1    0    0    -1  
+$EndComp
+Text GLabel 8650 4100 0    50   Input ~ 0
+5V
+Wire Wire Line
+	8650 4100 8900 4100
+Wire Wire Line
+	8900 4100 8900 4200
+$Comp
+L power:GND #PWR0102
+U 1 1 5CDE5779
+P 8900 5550
+F 0 "#PWR0102" H 8900 5300 50  0001 C CNN
+F 1 "GND" H 8900 5400 50  0000 C CNN
+F 2 "" H 8900 5550 50  0000 C CNN
+F 3 "" H 8900 5550 50  0000 C CNN
+	1    8900 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 5550 8900 5450
+$Comp
+L Device:C C18
+U 1 1 5CDE5780
+P 7600 4750
+F 0 "C18" H 7715 4796 50  0000 L CNN
+F 1 "0u1" H 7715 4705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7638 4600 50  0001 C CNN
+F 3 "~" H 7600 4750 50  0001 C CNN
+	1    7600 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 4600 7600 4200
+Wire Wire Line
+	7600 4200 8900 4200
+Connection ~ 8900 4200
+Wire Wire Line
+	8900 4200 8900 4300
+Wire Wire Line
+	8900 5450 7600 5450
+Wire Wire Line
+	7600 5450 7600 4900
+Connection ~ 8900 5450
+Wire Wire Line
+	8900 5450 8900 5400
+Text GLabel 8100 4950 0    50   Input ~ 0
+IN+2V
+Text GLabel 8100 5050 0    50   Input ~ 0
+IN-2V
+Wire Wire Line
+	8100 4950 8400 4950
+Wire Wire Line
+	8400 5050 8100 5050
+Text GLabel 9600 4750 2    50   Input ~ 0
+CurrentSenseV
+Wire Wire Line
+	9400 4750 9600 4750
+NoConn ~ 8400 4650
+NoConn ~ 8400 4750
+NoConn ~ 9400 4650
+$Comp
+L Device:R R28
+U 1 1 5CD7E965
+P 1450 1750
+F 0 "R28" V 1243 1750 50  0000 C CNN
+F 1 "59R" V 1334 1750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1380 1750 50  0001 C CNN
+F 3 "~" H 1450 1750 50  0001 C CNN
+	1    1450 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C26
+U 1 1 5CD7EAB7
+P 1650 2150
+F 0 "C26" H 1765 2196 50  0000 L CNN
+F 1 "120p" H 1765 2105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1688 2000 50  0001 C CNN
+F 3 "~" H 1650 2150 50  0001 C CNN
+	1    1650 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R32
+U 1 1 5CD80D63
+P 1900 1850
+F 0 "R32" V 1693 1850 50  0000 C CNN
+F 1 "59R" V 1784 1850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1830 1850 50  0001 C CNN
+F 3 "~" H 1900 1850 50  0001 C CNN
+	1    1900 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C32
+U 1 1 5CD80E0F
+P 2200 2150
+F 0 "C32" H 2315 2196 50  0000 L CNN
+F 1 "120p" H 2315 2105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2238 2000 50  0001 C CNN
+F 3 "~" H 2200 2150 50  0001 C CNN
+	1    2200 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 1750 1300 1750
+Wire Wire Line
+	1600 1750 1650 1750
+Wire Wire Line
+	1650 1750 1650 2000
+Wire Wire Line
+	1650 1750 2350 1750
+Connection ~ 1650 1750
+Wire Wire Line
+	1200 1850 1750 1850
+Wire Wire Line
+	2050 1850 2200 1850
+Wire Wire Line
+	2200 1850 2200 2000
+Connection ~ 2200 1850
+Wire Wire Line
+	2200 1850 2350 1850
+$Comp
+L power:GND #PWR015
+U 1 1 5CDEC6EF
+P 2000 2500
+F 0 "#PWR015" H 2000 2250 50  0001 C CNN
+F 1 "GND" H 2000 2350 50  0000 C CNN
+F 2 "" H 2000 2500 50  0000 C CNN
+F 3 "" H 2000 2500 50  0000 C CNN
+	1    2000 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 2500 2000 2300
+Wire Wire Line
+	2000 2300 2200 2300
+Wire Wire Line
+	2000 2300 1650 2300
+Connection ~ 2000 2300
+$Comp
+L Device:R R29
+U 1 1 5CE140C3
+P 1400 4350
+F 0 "R29" V 1193 4350 50  0000 C CNN
+F 1 "59R" V 1284 4350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1330 4350 50  0001 C CNN
+F 3 "~" H 1400 4350 50  0001 C CNN
+	1    1400 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C27
+U 1 1 5CE14E6F
+P 1600 4700
+F 0 "C27" H 1715 4746 50  0000 L CNN
+F 1 "120p" H 1715 4655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1638 4550 50  0001 C CNN
+F 3 "~" H 1600 4700 50  0001 C CNN
+	1    1600 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R31
+U 1 1 5CE154C6
+P 1850 4450
+F 0 "R31" V 1643 4450 50  0000 C CNN
+F 1 "59R" V 1734 4450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1780 4450 50  0001 C CNN
+F 3 "~" H 1850 4450 50  0001 C CNN
+	1    1850 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C31
+U 1 1 5CE15580
+P 2150 4700
+F 0 "C31" H 2265 4746 50  0000 L CNN
+F 1 "120p" H 2265 4655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2188 4550 50  0001 C CNN
+F 3 "~" H 2150 4700 50  0001 C CNN
+	1    2150 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 4350 1250 4350
+Wire Wire Line
+	1550 4350 1600 4350
+Wire Wire Line
+	1200 4450 1700 4450
+Wire Wire Line
+	1600 4550 1600 4350
+Connection ~ 1600 4350
+Wire Wire Line
+	1600 4350 2400 4350
+Wire Wire Line
+	2000 4450 2150 4450
+Wire Wire Line
+	2150 4550 2150 4450
+Connection ~ 2150 4450
+Wire Wire Line
+	2150 4450 2400 4450
+$Comp
+L power:GND #PWR012
+U 1 1 5CE8AD86
+P 1900 4950
+F 0 "#PWR012" H 1900 4700 50  0001 C CNN
+F 1 "GND" H 1900 4800 50  0000 C CNN
+F 2 "" H 1900 4950 50  0000 C CNN
+F 3 "" H 1900 4950 50  0000 C CNN
+	1    1900 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 4950 1900 4850
+Wire Wire Line
+	1900 4850 2150 4850
+Wire Wire Line
+	1900 4850 1600 4850
+Connection ~ 1900 4850
+$Comp
+L Device:R R30
+U 1 1 5CEB644B
+P 1500 6800
+F 0 "R30" V 1293 6800 50  0000 C CNN
+F 1 "59R" V 1384 6800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1430 6800 50  0001 C CNN
+F 3 "~" H 1500 6800 50  0001 C CNN
+	1    1500 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C29
+U 1 1 5CEB7391
+P 1700 7200
+F 0 "C29" H 1815 7246 50  0000 L CNN
+F 1 "120p" H 1815 7155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1738 7050 50  0001 C CNN
+F 3 "~" H 1700 7200 50  0001 C CNN
+	1    1700 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R33
+U 1 1 5CEB817F
+P 1900 6900
+F 0 "R33" V 1693 6900 50  0000 C CNN
+F 1 "59R" V 1784 6900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1830 6900 50  0001 C CNN
+F 3 "~" H 1900 6900 50  0001 C CNN
+	1    1900 6900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C30
+U 1 1 5CEB823B
+P 2100 7200
+F 0 "C30" H 2215 7246 50  0000 L CNN
+F 1 "120p" H 2215 7155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2138 7050 50  0001 C CNN
+F 3 "~" H 2100 7200 50  0001 C CNN
+	1    2100 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 5CEB8774
+P 1950 7500
+F 0 "#PWR013" H 1950 7250 50  0001 C CNN
+F 1 "GND" H 1950 7350 50  0000 C CNN
+F 2 "" H 1950 7500 50  0000 C CNN
+F 3 "" H 1950 7500 50  0000 C CNN
+	1    1950 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 6800 1350 6800
+Wire Wire Line
+	1650 6800 1700 6800
+Wire Wire Line
+	1700 7050 1700 6800
+Connection ~ 1700 6800
+Wire Wire Line
+	1700 6800 2200 6800
+Wire Wire Line
+	1250 6900 1750 6900
+Wire Wire Line
+	2050 6900 2100 6900
+Wire Wire Line
+	2100 7050 2100 6900
+Connection ~ 2100 6900
+Wire Wire Line
+	2100 6900 2200 6900
+Wire Wire Line
+	1700 7350 1950 7350
+Wire Wire Line
+	1950 7350 1950 7500
+Wire Wire Line
+	1950 7350 2100 7350
+Connection ~ 1950 7350
+$Comp
+L SCARAMotorFeedbackController-rescue:R R34
+U 1 1 5CF690B4
+P 2700 650
+F 0 "R34" V 2780 650 50  0000 C CNN
+F 1 "0R" V 2700 650 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 2630 650 50  0001 C CNN
+F 3 "" H 2700 650 50  0000 C CNN
+	1    2700 650 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1750 550  1850 550 
+Wire Wire Line
+	2750 850  2750 800 
+Wire Wire Line
+	2750 800  2550 800 
+Wire Wire Line
+	2150 800  2150 550 
+Connection ~ 2750 850 
+Wire Wire Line
+	2850 650  2900 650 
+Wire Wire Line
+	2550 650  2550 800 
+Connection ~ 2550 800 
+Wire Wire Line
+	2550 800  2150 800 
+$Comp
+L SCARAMotorFeedbackController-rescue:R R35
+U 1 1 5D02A4AD
+P 2700 3250
+F 0 "R35" V 2780 3250 50  0000 C CNN
+F 1 "0R" V 2700 3250 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 2630 3250 50  0001 C CNN
+F 3 "" H 2700 3250 50  0000 C CNN
+	1    2700 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2800 3450 2800 3400
+Wire Wire Line
+	2800 3400 2300 3400
+Wire Wire Line
+	2300 3400 2300 3250
+Connection ~ 2800 3450
+Wire Wire Line
+	2300 3250 2550 3250
+Connection ~ 2300 3250
+Wire Wire Line
+	2300 3250 2300 3150
+Wire Wire Line
+	2850 3250 2950 3250
+$Comp
+L SCARAMotorFeedbackController-rescue:R R36
+U 1 1 5D0A50C3
+P 2500 5700
+F 0 "R36" V 2580 5700 50  0000 C CNN
+F 1 "0R" V 2500 5700 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 2430 5700 50  0001 C CNN
+F 3 "" H 2500 5700 50  0000 C CNN
+	1    2500 5700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 5600 2150 5600
+Wire Wire Line
+	2150 5600 2150 5700
+Wire Wire Line
+	2150 5850 2600 5850
+Wire Wire Line
+	2600 5850 2600 5900
+Connection ~ 2600 5900
+Wire Wire Line
+	2350 5700 2150 5700
+Connection ~ 2150 5700
+Wire Wire Line
+	2150 5700 2150 5850
+Wire Wire Line
+	2650 5700 2750 5700
+Wire Wire Line
+	3200 1700 4150 1700
+Wire Wire Line
+	3250 4300 4200 4300
+Wire Wire Line
+	3050 6750 4000 6750
+Wire Wire Line
+	5100 7600 5100 7950
+$EndSCHEMATC

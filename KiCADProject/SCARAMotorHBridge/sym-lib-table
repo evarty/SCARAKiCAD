@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name SCARAMotorHBridge-rescue)(type Legacy)(uri ${KIPRJMOD}/SCARAMotorHBridge-rescue.lib)(options "")(descr ""))
+  (lib (name TedsComponents)(type Legacy)(uri /home/edward/Electronics/Kicad/TedsComponents/TedsComponents.lib)(options "")(descr ""))
+)
